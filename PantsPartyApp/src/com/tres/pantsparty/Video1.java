@@ -71,6 +71,8 @@ public class Video1 extends Activity implements SurfaceHolder.Callback, OnComple
 	@Override
 	public void onCompletion(MediaPlayer arg0) {
 		// return the success? Number of vid played?
+		//finish();
+		setResult(Globals.VIDEO1, null);
 		finish();
 	}
 }
