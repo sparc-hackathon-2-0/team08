@@ -63,5 +63,13 @@
         android:layout_below="@+id/btnDoucheMode"
         android:layout_centerHorizontal="true"
         android:text="@string/PantsParty" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btnLearnToParty"
+        android:layout_alignTop="@+id/textView1"
+        android:text="@string/exit" />
 
 </RelativeLayout>

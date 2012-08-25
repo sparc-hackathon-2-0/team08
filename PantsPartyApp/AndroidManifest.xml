@@ -15,5 +15,12 @@
         <activity android:name=".StartParty"/>
         <activity android:name=".PantsParty"/>
         <activity android:name=".DoucheMode"/>
+        <activity android:name=".VideoInfoGeneric"/>
+        <activity android:name=".Video1"/>
+        <activity android:name=".Video2"/>
+        <activity android:name=".Video3"/>
+        <activity android:name=".Video4"/>
+        <activity android:name=".Video5"/>
+        <activity android:name=".Video6"/>
     </application>
 </manifest>

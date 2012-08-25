@@ -2,6 +2,7 @@ package com.tres.pantsparty;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -16,31 +17,38 @@ public class MainActivity extends Activity implements OnClickListener {
 	private Button mExit;
 	private Button mPantsParty;
 	private Button mRealUltimateParty;
-	
-	
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        
-        mStartParty = (Button) findViewById(R.id.btnStartParty);
-        mDoucheMode = (Button) findViewById(R.id.btnDoucheMode);
-        mLearnToParty = (Button) findViewById(R.id.btnLearnToParty);
-        mPantsParty = (Button) findViewById(R.id.btnPantsParty);
-        mRealUltimateParty = (Button) findViewById(R.id.btnRealUltimateParty);
 
-        mStartParty.setOnClickListener(this);
-        mDoucheMode.setOnClickListener(this);
-        mLearnToParty.setOnClickListener(this);
-        mPantsParty.setOnClickListener(this);
-        mRealUltimateParty.setOnClickListener(this);
-    }
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.activity_main, menu);
-        return true;
-    }
+		mStartParty = (Button) findViewById(R.id.btnStartParty);
+		mDoucheMode = (Button) findViewById(R.id.btnDoucheMode);
+		mLearnToParty = (Button) findViewById(R.id.btnLearnToParty);
+		mPantsParty = (Button) findViewById(R.id.btnPantsParty);
+		mRealUltimateParty = (Button) findViewById(R.id.btnRealUltimateParty);
+		mExit = (Button) findViewById(R.id.btnExit);
+
+		mStartParty.setOnClickListener(this);
+		mDoucheMode.setOnClickListener(this);
+		mLearnToParty.setOnClickListener(this);
+		mPantsParty.setOnClickListener(this);
+		mRealUltimateParty.setOnClickListener(this);
+		mExit.setOnClickListener(this);
+
+		// Put the media file into the res/raw folder of your application
+		//MediaPlayer mp = MediaPlayer.create(this, R.raw.yourSoundId);
+		//mp.start();
+		
+
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		getMenuInflater().inflate(R.menu.activity_main, menu);
+		return true;
+	}
 
 	@Override
 	public void onClick(View v) {
@@ -59,8 +67,16 @@ public class MainActivity extends Activity implements OnClickListener {
 			break;
 		case R.id.btnRealUltimateParty:
 			startRealUltimateParty();
-			break;		
+			break;
+		case R.id.btnExit:
+			startExit();
+			break;
 		}
+	}
+
+	private void startExit() {
+		Intent i = new Intent(this, Exit.class);
+		startActivity(i);
 	}
 
 	private void startPantsParty() {
@@ -74,9 +90,9 @@ public class MainActivity extends Activity implements OnClickListener {
 	}
 
 	private void startStartParty() {
-		//int myInt = 0;
-		//Intent i = new Intent(this, StartParty.class);
-		//startActivityForResult(i, myInt);
+		// int myInt = 0;
+		// Intent i = new Intent(this, StartParty.class);
+		// startActivityForResult(i, myInt);
 	}
 
 	private void startLearnToParty() {
