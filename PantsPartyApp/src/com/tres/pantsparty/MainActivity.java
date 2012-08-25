@@ -149,11 +149,11 @@ public class MainActivity extends Activity implements OnClickListener {
 
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
-		if (requestCode == Globals.MOREVIDEO) {
+		//if (requestCode == Globals.MOREVIDEO) {
 			switch (resultCode) {
 			case Globals.VIDEO1:
 				Intent i = new Intent(this, Video2.class);
-				i.putExtra(Globals.VIDEO, Globals.VIDEO1);
+				//i.putExtra(Globals.VIDEO, Globals.VIDEO1);
 				startActivityForResult(i, Globals.MOREVIDEO);
 				break;
 			case Globals.VIDEO2:
@@ -177,6 +177,6 @@ public class MainActivity extends Activity implements OnClickListener {
 				startActivityForResult(i6, Globals.MOREVIDEO);
 				break;
 			}
-		}
+		//}
 	}
 }

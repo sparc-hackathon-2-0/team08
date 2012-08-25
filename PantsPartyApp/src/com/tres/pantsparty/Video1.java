@@ -22,6 +22,7 @@ public class Video1 extends Activity implements SurfaceHolder.Callback, OnComple
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.video);
 
+		
 		mVideoView = (VideoView) findViewById(R.id.videoView1);
         mVideoView.setOnCompletionListener(this);
 		
