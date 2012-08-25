@@ -7,12 +7,18 @@
     <string name="StartParty">Start Party</string>
     <string name="LearnToParty">Learn to Party</string>
     <string name="DoucheMode">Douche Mode</string>
-    <string name="feature_5">Feature 5</string>
-    <string name="feature_6">Feature 6</string>
-    <string name="feature_1">Feature 1</string>
-    <string name="feature_2">Feature 2</string>
-    <string name="feature_3">Feature 3</string>
-    <string name="feature_4">Feature 4</string>
+    <string name="feature_5">The Keg
+</string>
+    <string name="feature_6">The Puker
+</string>
+    <string name="feature_1">The Sprinkler
+</string>
+    <string name="feature_2">The Freak
+</string>
+    <string name="feature_3">The Creeper
+</string>
+    <string name="feature_4">The Pick-Up
+</string>
     <string name="RealUltimateParty">Real Ultimate Party</string>
     <string name="PantsParty">Pants Party</string>
     <string name="exit">Exit</string>

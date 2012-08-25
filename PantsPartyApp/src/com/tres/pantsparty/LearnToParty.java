@@ -67,31 +67,32 @@ public class LearnToParty extends Activity {
 			 * YourActivity.class));
 			 */
 
-			String msg = "You selected Feature ";
+			String msg = "Welcome to ";
 			Intent i = null;
 			switch (v.getId()) {
 			case R.id.feature_1:
-				msg += "1";
-				i = new Intent(LearnToParty.this, Video1.class);
+				msg += getString(R.string.feature_1);
+				i = new Intent(LearnToParty.this, Video1Info.class);
 				break;
 			case R.id.feature_2:
-				i = new Intent(LearnToParty.this, Video2.class);
+				msg += getString(R.string.feature_2);
+				i = new Intent(LearnToParty.this, Video2Info.class);
 				break;
 			case R.id.feature_3:
-				msg += "3";
-				i = new Intent(LearnToParty.this, Video3.class);
+				msg += getString(R.string.feature_3);
+				i = new Intent(LearnToParty.this, Video3Info.class);
 				break;
 			case R.id.feature_4:
-				msg += "4";
-				i = new Intent(LearnToParty.this, Video4.class);
+				msg += getString(R.string.feature_4);
+				i = new Intent(LearnToParty.this, Video4Info.class);
 				break;
 			case R.id.feature_5:
-				msg += "5";
-				i = new Intent(LearnToParty.this, Video5.class);
+				msg += getString(R.string.feature_5);
+				i = new Intent(LearnToParty.this, Video5Info.class);
 				break;
 			case R.id.feature_6:
-				msg += "6";
-				i = new Intent(LearnToParty.this, Video6.class);
+				msg += getString(R.string.feature_6);
+				i = new Intent(LearnToParty.this, Video6Info.class);
 				break;
 			default:
 				// none

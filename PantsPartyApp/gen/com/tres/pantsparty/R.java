@@ -12,36 +12,49 @@ public final class R {
     }
     public static final class drawable {
         public static final int add_video_merged=0x7f020000;
-        public static final int dashboardicon=0x7f020001;
-        public static final int dashboarditembackground=0x7f020002;
-        public static final int ic_action_search=0x7f020003;
-        public static final int ic_launcher=0x7f020004;
-        public static final int launcher_icon=0x7f020005;
-        public static final int learn_to_party_btn=0x7f020006;
-        public static final int real_ultimate_party=0x7f020007;
-        public static final int selector_douche_mode=0x7f020008;
-        public static final int selector_learn_party=0x7f020009;
-        public static final int selector_pants_party=0x7f02000a;
-        public static final int selector_real_ultimate_party=0x7f02000b;
-        public static final int selector_start_party=0x7f02000c;
-        public static final int startpartynormal=0x7f02000d;
-        public static final int startpartyselected=0x7f02000e;
-        public static final int thumb_1=0x7f02000f;
-        public static final int thumb_2=0x7f020010;
-        public static final int thumb_3=0x7f020011;
-        public static final int thumb_4=0x7f020012;
-        public static final int thumb_5=0x7f020013;
-        public static final int thumb_6=0x7f020014;
-        public static final int video_thumb=0x7f020015;
+        public static final int addvideoselected=0x7f020001;
+        public static final int btnstartpartynormal=0x7f020002;
+        public static final int btnstartpartyselected=0x7f020003;
+        public static final int dashboardicon=0x7f020004;
+        public static final int dashboarditembackground=0x7f020005;
+        public static final int douchemodenormal=0x7f020006;
+        public static final int douchemodeselected=0x7f020007;
+        public static final int exitnormal=0x7f020008;
+        public static final int exitselected=0x7f020009;
+        public static final int ic_action_search=0x7f02000a;
+        public static final int ic_launcher=0x7f02000b;
+        public static final int launcher_icon=0x7f02000c;
+        public static final int launchericon=0x7f02000d;
+        public static final int learnpartynormal=0x7f02000e;
+        public static final int learnpartyselected=0x7f02000f;
+        public static final int pantspartynormal=0x7f020010;
+        public static final int pantspartyselected=0x7f020011;
+        public static final int realultimatepartynormal=0x7f020012;
+        public static final int realultimatepartyselected=0x7f020013;
+        public static final int selector_douche_mode=0x7f020014;
+        public static final int selector_exit=0x7f020015;
+        public static final int selector_learn_party=0x7f020016;
+        public static final int selector_pants_party=0x7f020017;
+        public static final int selector_real_ultimate_party=0x7f020018;
+        public static final int selector_start_party=0x7f020019;
+        public static final int startpartynormal=0x7f02001a;
+        public static final int startpartyselected=0x7f02001b;
+        public static final int thumb_1=0x7f02001c;
+        public static final int thumb_2=0x7f02001d;
+        public static final int thumb_3=0x7f02001e;
+        public static final int thumb_4=0x7f02001f;
+        public static final int thumb_5=0x7f020020;
+        public static final int thumb_6=0x7f020021;
+        public static final int video_thumb=0x7f020022;
     }
     public static final class id {
-        public static final int VideoTitle=0x7f08001a;
+        public static final int VideoTitle=0x7f08001c;
         public static final int btnDoucheMode=0x7f080005;
-        public static final int btnExit=0x7f080004;
-        public static final int btnLearnToParty=0x7f080002;
-        public static final int btnPantsParty=0x7f080001;
-        public static final int btnRealUltimateParty=0x7f080003;
-        public static final int btnStartParty=0x7f080006;
+        public static final int btnExit=0x7f080001;
+        public static final int btnLearnToParty=0x7f080004;
+        public static final int btnPantsParty=0x7f080006;
+        public static final int btnRealUltimateParty=0x7f080002;
+        public static final int btnStartParty=0x7f080003;
         public static final int feature_1=0x7f080007;
         public static final int feature_2=0x7f08000a;
         public static final int feature_3=0x7f08000d;
@@ -60,17 +73,25 @@ public final class R {
         public static final int feature_name_4=0x7f080012;
         public static final int feature_name_5=0x7f080015;
         public static final int feature_name_6=0x7f080018;
-        public static final int menu_settings=0x7f08001d;
+        public static final int imageButton1=0x7f08001b;
+        public static final int menu_settings=0x7f08001e;
         public static final int quickContactBadge1=0x7f080000;
-        public static final int vidDescription=0x7f08001c;
-        public static final int videoThumb=0x7f08001b;
+        public static final int vidDescription=0x7f08001a;
+        public static final int videoThumb=0x7f08001d;
         public static final int videoView1=0x7f080019;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int dashboard=0x7f030001;
-        public static final int video=0x7f030002;
-        public static final int video_info_generic=0x7f030003;
+        public static final int splash=0x7f030002;
+        public static final int video=0x7f030003;
+        public static final int video_five_layout=0x7f030004;
+        public static final int video_four_layout=0x7f030005;
+        public static final int video_info_generic=0x7f030006;
+        public static final int video_one_layout=0x7f030007;
+        public static final int video_six_layout=0x7f030008;
+        public static final int video_three_layout=0x7f030009;
+        public static final int video_two_layout=0x7f03000a;
     }
     public static final class menu {
         public static final int activity_main=0x7f070000;

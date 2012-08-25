@@ -29,7 +29,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);		
 
 		mStartParty = (Button) findViewById(R.id.btnStartParty);
 		mDoucheMode = (Button) findViewById(R.id.btnDoucheMode);

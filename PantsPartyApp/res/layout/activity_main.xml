@@ -11,12 +11,28 @@
         android:layout_alignParentTop="true" />
 
     <Button
-        android:id="@+id/btnPantsParty"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/btnExit"
+        android:layout_width="175dp"
+        android:layout_height="60dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:background="@drawable/selector_pants_party" />
+        android:background="@drawable/selector_exit" />
+
+    <Button
+        android:id="@+id/btnRealUltimateParty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/selector_real_ultimate_party" />
+
+    <Button
+        android:id="@+id/btnStartParty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/selector_start_party" />
 
     <Button
         android:id="@+id/btnLearnToParty"
@@ -27,22 +43,6 @@
         android:background="@drawable/selector_learn_party" />
 
     <Button
-        android:id="@+id/btnRealUltimateParty"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/btnLearnToParty"
-        android:background="@drawable/selector_real_ultimate_party" />
-
-    <Button
-        android:id="@+id/btnExit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/selector_exit" />
-
-    <Button
         android:id="@+id/btnDoucheMode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -51,12 +51,11 @@
         android:background="@drawable/selector_douche_mode" />
 
     <Button
-        android:id="@+id/btnStartParty"
+        android:id="@+id/btnPantsParty"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/btnPantsParty"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="14dp"
-        android:background="@drawable/selector_start_party" />
+        android:background="@drawable/selector_pants_party" />
 
 </RelativeLayout>

@@ -66,11 +66,38 @@
         <activity
             android:name=".Video5"
             android:screenOrientation="landscape"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
         <activity
             android:name=".Video6"
             android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".Video1Info"
+            android:screenOrientation="landscape"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-    </application>
-
+        <activity
+            android:name=".Video2Info"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".Video3Info"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".Video4Info"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".Video5Info"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".Video6Info"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+</application>
 </manifest>
