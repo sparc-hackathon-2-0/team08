@@ -4,11 +4,64 @@
     android:layout_height="match_parent" >
 
     <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="82dp"
+        android:layout_marginLeft="18dp"
         android:text="@string/hello_world"
         tools:context=".MainActivity" />
+
+    <QuickContactBadge
+        android:id="@+id/quickContactBadge1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/btnStartParty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quickContactBadge1"
+        android:layout_marginTop="124dp"
+        android:text="@string/StartParty" />
+
+    <Button
+        android:id="@+id/btnDoucheMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/btnStartParty"
+        android:layout_marginLeft="26dp"
+        android:text="@string/DoucheMode" />
+
+    <Button
+        android:id="@+id/btnLearnToParty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnStartParty"
+        android:layout_alignBottom="@+id/btnStartParty"
+        android:layout_toRightOf="@+id/btnStartParty"
+        android:text="@string/LearnToParty" />
+
+    <Button
+        android:id="@+id/btnRealUltimateParty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/btnLearnToParty"
+        android:layout_below="@+id/quickContactBadge1"
+        android:layout_marginTop="32dp"
+        android:text="@string/RealUltimateParty" />
+
+    <Button
+        android:id="@+id/btnPantsParty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDoucheMode"
+        android:layout_centerHorizontal="true"
+        android:text="@string/PantsParty" />
 
 </RelativeLayout>
