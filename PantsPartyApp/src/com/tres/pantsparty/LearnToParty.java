@@ -68,29 +68,36 @@ public class LearnToParty extends Activity {
 			 */
 
 			String msg = "You selected Feature ";
-
+			Intent i = null;
 			switch (v.getId()) {
 			case R.id.feature_1:
 				msg += "1";
-				startVideoInfoGeneric();
+				i = new Intent(LearnToParty.this, Video1.class);
 				break;
 			case R.id.feature_2:
-				msg += "2";
+				i = new Intent(LearnToParty.this, Video2.class);
 				break;
 			case R.id.feature_3:
 				msg += "3";
+				i = new Intent(LearnToParty.this, Video3.class);
 				break;
 			case R.id.feature_4:
 				msg += "4";
+				i = new Intent(LearnToParty.this, Video4.class);
 				break;
 			case R.id.feature_5:
 				msg += "5";
+				i = new Intent(LearnToParty.this, Video5.class);
 				break;
 			case R.id.feature_6:
 				msg += "6";
+				i = new Intent(LearnToParty.this, Video6.class);
 				break;
 			default:
 				// none
+			}
+			if (i != null) {
+				startActivity(i);
 			}
 
 			Toast.makeText(v.getContext(), msg, Toast.LENGTH_SHORT).show();

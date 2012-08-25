@@ -1,9 +1,14 @@
 package com.tres.pantsparty;
 
+import java.io.IOException;
+
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.media.MediaPlayer;
+import android.media.MediaPlayer.OnCompletionListener;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -18,10 +23,13 @@ public class MainActivity extends Activity implements OnClickListener {
 	private Button mPantsParty;
 	private Button mRealUltimateParty;
 
+	private MediaPlayer mp;
+
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
 		mStartParty = (Button) findViewById(R.id.btnStartParty);
 		mDoucheMode = (Button) findViewById(R.id.btnDoucheMode);
@@ -38,9 +46,30 @@ public class MainActivity extends Activity implements OnClickListener {
 		mExit.setOnClickListener(this);
 
 		// Put the media file into the res/raw folder of your application
-		//MediaPlayer mp = MediaPlayer.create(this, R.raw.yourSoundId);
-		//mp.start();
-		
+		mp = MediaPlayer.create(this, R.raw.party_hard_clip);
+
+	}
+
+	private void playSong(String songPath) {
+		try {
+
+			mp.reset();
+			mp.setDataSource(songPath);
+			mp.prepare();
+			mp.start();
+
+			// Setup listener so next song starts automatically
+			mp.setOnCompletionListener(new OnCompletionListener() {
+
+				public void onCompletion(MediaPlayer arg0) {
+					// nextSong();
+				}
+
+			});
+
+		} catch (IOException e) {
+			Log.v(getString(R.string.app_name), e.getMessage());
+		}
 	}
 
 	@Override
@@ -83,6 +112,19 @@ public class MainActivity extends Activity implements OnClickListener {
 		startActivity(i);
 	}
 
+	@Override
+	protected void onPause() {
+		mp.stop();
+		mp.reset();
+		super.onPause();
+	}
+
+	@Override
+	protected void onResume() {
+		mp.start();
+		super.onResume();
+	}
+
 	private void startRealUltimateParty() {
 		Intent i = new Intent(this, RealUltimateParty.class);
 		startActivity(i);
@@ -92,6 +134,8 @@ public class MainActivity extends Activity implements OnClickListener {
 		// int myInt = 0;
 		// Intent i = new Intent(this, StartParty.class);
 		// startActivityForResult(i, myInt);
+		Intent i = new Intent(this, Video1.class);
+		startActivity(i);
 	}
 
 	private void startLearnToParty() {
