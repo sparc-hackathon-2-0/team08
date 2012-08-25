@@ -18,7 +18,7 @@ public final class R {
         public static final int video_thumb=0x7f020004;
     }
     public static final class id {
-        public static final int VideoTitle=0x7f08001a;
+        public static final int VideoTitle=0x7f08001b;
         public static final int btnDoucheMode=0x7f080003;
         public static final int btnExit=0x7f080007;
         public static final int btnLearnToParty=0x7f080004;
@@ -43,16 +43,18 @@ public final class R {
         public static final int feature_name_4=0x7f080013;
         public static final int feature_name_5=0x7f080016;
         public static final int feature_name_6=0x7f080019;
-        public static final int menu_settings=0x7f08001d;
+        public static final int menu_settings=0x7f08001e;
         public static final int quickContactBadge1=0x7f080001;
         public static final int textView1=0x7f080000;
-        public static final int vidDescription=0x7f08001c;
-        public static final int videoThumb=0x7f08001b;
+        public static final int vidDescription=0x7f08001d;
+        public static final int videoThumb=0x7f08001c;
+        public static final int videoView1=0x7f08001a;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int dashboard=0x7f030001;
-        public static final int video_info_generic=0x7f030002;
+        public static final int video=0x7f030002;
+        public static final int video_info_generic=0x7f030003;
     }
     public static final class menu {
         public static final int activity_main=0x7f070000;
@@ -61,6 +63,7 @@ public final class R {
         public static final int blockinbeats=0x7f040000;
         public static final int dontforgetaboutme=0x7f040001;
         public static final int rebelyell=0x7f040002;
+        public static final int sprinkler=0x7f040003;
     }
     public static final class string {
         public static final int DoucheMode=0x7f050006;
