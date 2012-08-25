@@ -97,8 +97,8 @@ public class LearnToParty extends Activity {
 		}
 
 		private void startVideoInfoGeneric() {
-			Intent i = new Intent(this, VideoInfoGeneric.class);
-			startActivity(i);
+			//Intent i = new Intent(this, VideoInfoGeneric.class);
+			//startActivity(i);
 		}
 
 	}

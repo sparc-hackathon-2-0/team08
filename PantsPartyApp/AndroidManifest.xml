@@ -11,5 +11,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".LearnToParty"/>
+        <activity android:name=".RealUltimateParty"/>
+        <activity android:name=".StartParty"/>
+        <activity android:name=".PantsParty"/>
+        <activity android:name=".DoucheMode"/>
     </application>
 </manifest>

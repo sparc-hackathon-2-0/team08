@@ -64,13 +64,13 @@ public class MainActivity extends Activity implements OnClickListener {
 	}
 
 	private void startPantsParty() {
-		// TODO Auto-generated method stub
-		
+		Intent i = new Intent(this, PantsParty.class);
+		startActivity(i);
 	}
 
 	private void startRealUltimateParty() {
-		// TODO Auto-generated method stub
-		
+		Intent i = new Intent(this, RealUltimateParty.class);
+		startActivity(i);
 	}
 
 	private void startStartParty() {
@@ -85,7 +85,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	}
 
 	private void startDoucheMode() {
-		// TODO Auto-generated method stub
-		
+		Intent i = new Intent(this, DoucheMode.class);
+		startActivity(i);
 	}
 }
