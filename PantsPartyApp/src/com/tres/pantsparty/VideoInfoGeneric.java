@@ -18,9 +18,6 @@ public class VideoInfoGeneric extends Activity {
 		ImageView vidThumb = (ImageView) findViewById(R.id.videoThumb);
 		EditText vidDes = (EditText) findViewById(R.id.vidDescription);
 		
-		
-		
-		
-		
+				
 	}
 }

@@ -15,8 +15,10 @@ public final class R {
         public static final int dashboarditembackground=0x7f020001;
         public static final int ic_action_search=0x7f020002;
         public static final int ic_launcher=0x7f020003;
+        public static final int video_thumb=0x7f020004;
     }
     public static final class id {
+        public static final int VideoTitle=0x7f070019;
         public static final int btnDoucheMode=0x7f070003;
         public static final int btnLearnToParty=0x7f070004;
         public static final int btnPantsParty=0x7f070006;
@@ -40,13 +42,16 @@ public final class R {
         public static final int feature_name_4=0x7f070012;
         public static final int feature_name_5=0x7f070015;
         public static final int feature_name_6=0x7f070018;
-        public static final int menu_settings=0x7f070019;
+        public static final int menu_settings=0x7f07001c;
         public static final int quickContactBadge1=0x7f070001;
         public static final int textView1=0x7f070000;
+        public static final int vidDescription=0x7f07001b;
+        public static final int videoThumb=0x7f07001a;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int dashboard=0x7f030001;
+        public static final int video_info_generic=0x7f030002;
     }
     public static final class menu {
         public static final int activity_main=0x7f060000;
