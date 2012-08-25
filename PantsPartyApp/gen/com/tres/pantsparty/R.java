@@ -15,7 +15,8 @@ public final class R {
         public static final int dashboarditembackground=0x7f020001;
         public static final int ic_action_search=0x7f020002;
         public static final int ic_launcher=0x7f020003;
-        public static final int video_thumb=0x7f020004;
+        public static final int launcher_icon=0x7f020004;
+        public static final int video_thumb=0x7f020005;
     }
     public static final class id {
         public static final int VideoTitle=0x7f08001b;
@@ -60,10 +61,19 @@ public final class R {
         public static final int activity_main=0x7f070000;
     }
     public static final class raw {
-        public static final int blockinbeats=0x7f040000;
-        public static final int dontforgetaboutme=0x7f040001;
-        public static final int rebelyell=0x7f040002;
-        public static final int sprinkler=0x7f040003;
+        public static final int babygotback_clip=0x7f040000;
+        public static final int block_rockin_beats_clip=0x7f040001;
+        public static final int dont_you_forget_clip=0x7f040002;
+        public static final int dontforgetaboutme=0x7f040003;
+        public static final int party_hard_clip=0x7f040004;
+        public static final int rebel_yell_clip=0x7f040005;
+        public static final int sprinkler=0x7f040006;
+        public static final int video1=0x7f040007;
+        public static final int video2=0x7f040008;
+        public static final int video3=0x7f040009;
+        public static final int video4=0x7f04000a;
+        public static final int video5=0x7f04000b;
+        public static final int video6=0x7f04000c;
     }
     public static final class string {
         public static final int DoucheMode=0x7f050006;

@@ -23,6 +23,7 @@ public class Video1 extends Activity implements SurfaceHolder.Callback, OnComple
 		setContentView(R.layout.video);
 
 		mVideoView = (VideoView) findViewById(R.id.videoView1);
+        mVideoView.setOnCompletionListener(this);
 		
 		mMedia = new MediaController(this, true);
 		
@@ -30,7 +31,7 @@ public class Video1 extends Activity implements SurfaceHolder.Callback, OnComple
 		 mMedia.setAnchorView(mVideoView);
 		 mVideoView.setMediaController(mMedia);
 
-		 mVideoView.setVideoURI(Uri.parse("android.resource://" + getPackageName() +"/"+R.raw.sprinkler)); 
+		 mVideoView.setVideoURI(Uri.parse("android.resource://" + getPackageName() +"/"+R.raw.video1)); 
 
 		 mVideoView.requestFocus();
 		 mVideoView.start(); 
@@ -69,6 +70,7 @@ public class Video1 extends Activity implements SurfaceHolder.Callback, OnComple
 
 	@Override
 	public void onCompletion(MediaPlayer arg0) {
-		
+		// return the success? Number of vid played?
+		finish();
 	}
 }

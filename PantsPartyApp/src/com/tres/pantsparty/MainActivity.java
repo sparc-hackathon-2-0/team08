@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnCompletionListener;
 import android.os.Bundle;
@@ -28,6 +29,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
 		mStartParty = (Button) findViewById(R.id.btnStartParty);
 		mDoucheMode = (Button) findViewById(R.id.btnDoucheMode);
@@ -44,8 +46,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		mExit.setOnClickListener(this);
 
 		// Put the media file into the res/raw folder of your application
-		mp = MediaPlayer.create(this, R.raw.rebelyell);
-		mp.start();
+		mp = MediaPlayer.create(this, R.raw.party_hard_clip);
 
 	}
 
@@ -111,6 +112,19 @@ public class MainActivity extends Activity implements OnClickListener {
 		startActivity(i);
 	}
 
+	@Override
+	protected void onPause() {
+		mp.stop();
+		mp.reset();
+		super.onPause();
+	}
+
+	@Override
+	protected void onResume() {
+		mp.start();
+		super.onResume();
+	}
+
 	private void startRealUltimateParty() {
 		Intent i = new Intent(this, RealUltimateParty.class);
 		startActivity(i);
@@ -120,7 +134,6 @@ public class MainActivity extends Activity implements OnClickListener {
 		// int myInt = 0;
 		// Intent i = new Intent(this, StartParty.class);
 		// startActivityForResult(i, myInt);
-
 		Intent i = new Intent(this, Video1.class);
 		startActivity(i);
 	}
