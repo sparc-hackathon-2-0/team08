@@ -3,16 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="82dp"
-        android:layout_marginLeft="18dp"
-        android:text="@string/hello_world"
-        tools:context=".MainActivity" />
-
     <QuickContactBadge
         android:id="@+id/quickContactBadge1"
         android:layout_width="match_parent"
@@ -21,55 +11,52 @@
         android:layout_alignParentTop="true" />
 
     <Button
-        android:id="@+id/btnStartParty"
+        android:id="@+id/btnPantsParty"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/quickContactBadge1"
-        android:layout_marginTop="124dp"
-        android:text="@string/StartParty" />
-
-    <Button
-        android:id="@+id/btnDoucheMode"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/btnStartParty"
-        android:layout_marginLeft="26dp"
-        android:text="@string/DoucheMode" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/selector_pants_party" />
 
     <Button
         android:id="@+id/btnLearnToParty"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/btnStartParty"
-        android:layout_alignBottom="@+id/btnStartParty"
-        android:layout_toRightOf="@+id/btnStartParty"
-        android:text="@string/LearnToParty" />
-
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/selector_learn_party" />
+
     <Button
         android:id="@+id/btnRealUltimateParty"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_alignRight="@+id/btnLearnToParty"
-        android:layout_below="@+id/quickContactBadge1"
-        android:layout_marginTop="32dp"
-        android:text="@string/RealUltimateParty" />
-
-    <Button
-        android:id="@+id/btnPantsParty"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btnDoucheMode"
-        android:layout_centerHorizontal="true"
-        android:text="@string/PantsParty" />
-
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btnLearnToParty"
+        android:background="@drawable/selector_real_ultimate_party" />
+
     <Button
         android:id="@+id/btnExit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/btnLearnToParty"
-        android:layout_alignTop="@+id/textView1"
-        android:text="@string/exit" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/selector_exit" />
+
+    <Button
+        android:id="@+id/btnDoucheMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/selector_douche_mode" />
+
+    <Button
+        android:id="@+id/btnStartParty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnPantsParty"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/selector_start_party" />
 
 </RelativeLayout>
