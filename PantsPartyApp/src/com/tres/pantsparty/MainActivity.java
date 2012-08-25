@@ -41,7 +41,6 @@ public class MainActivity extends Activity implements OnClickListener {
 		//MediaPlayer mp = MediaPlayer.create(this, R.raw.yourSoundId);
 		//mp.start();
 		
-
 	}
 
 	@Override

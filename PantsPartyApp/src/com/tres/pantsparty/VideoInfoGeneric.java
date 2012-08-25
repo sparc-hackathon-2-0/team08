@@ -13,11 +13,11 @@ public class VideoInfoGeneric extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		setContentView(R.layout.video_info_generic);
 		
 		TextView vidTitle = (TextView) findViewById(R.id.VideoTitle);
 		ImageView vidThumb = (ImageView) findViewById(R.id.videoThumb);
 		EditText vidDes = (EditText) findViewById(R.id.vidDescription);
-		
 				
 	}
 }
