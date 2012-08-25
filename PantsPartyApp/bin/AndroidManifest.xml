@@ -10,17 +10,13 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        
         <activity android:name=".LearnToParty"/>
         <activity android:name=".RealUltimateParty"/>
         <activity android:name=".StartParty"/>
         <activity android:name=".PantsParty"/>
         <activity android:name=".DoucheMode"/>
         <activity android:name=".VideoInfoGeneric"/>
-        <activity android:name=".Video1"/>
-        <activity android:name=".Video2"/>
-        <activity android:name=".Video3"/>
-        <activity android:name=".Video4"/>
-        <activity android:name=".Video5"/>
-        <activity android:name=".Video6"/>
+        
     </application>
 </manifest>
