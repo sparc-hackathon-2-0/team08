@@ -123,6 +123,12 @@ public class MainActivity extends Activity implements OnClickListener {
 
 	@Override
 	protected void onResume() {
+		if (!mp.isPlaying())
+		{
+			
+			mp.start();
+		}
+		
 		super.onResume();
 	}
 
