@@ -42,7 +42,7 @@ public final class R {
         public static final int selector_pants_party=0x7f02001c;
         public static final int selector_real_ultimate_party=0x7f02001d;
         public static final int selector_start_party=0x7f02001e;
-        public static final int splashpage01=0x7f02001f;
+        public static final int splash=0x7f02001f;
         public static final int sprinkler=0x7f020020;
         public static final int startpartynormal=0x7f020021;
         public static final int startpartyselected=0x7f020022;

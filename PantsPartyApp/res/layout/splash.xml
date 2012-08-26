@@ -3,10 +3,10 @@
     android:layout_width="fill_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal" >
-    <TextView  
+    <ImageView
     android:layout_width="fill_parent" 
     android:layout_height="wrap_content" 
-    android:text="SPLASHSCREEN!!!!"
+    android:src="@drawable/splash"
     />
 
 </LinearLayout>

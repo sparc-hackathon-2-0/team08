@@ -32,8 +32,8 @@ public class SplashScreen extends Activity {
 	                // do nothing
 	            } finally {
 	                finish();
-	                startActivity(new Intent("com.tres.pantsparty.MainActivity"));
-	                stop();
+	                Intent i= new Intent(SplashScreen.this, MainActivity.class);
+	                startActivity(i);
 	            }
 	        }
 	    };

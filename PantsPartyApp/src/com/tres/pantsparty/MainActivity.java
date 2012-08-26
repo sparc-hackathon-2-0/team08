@@ -114,8 +114,10 @@ public class MainActivity extends Activity implements OnClickListener {
 
 	@Override
 	protected void onPause() {
-		mp.stop();
-		mp.reset();
+		if (mp.isPlaying()) {
+			mp.stop();
+			mp.reset();
+		}
 		super.onPause();
 	}
 
@@ -149,34 +151,34 @@ public class MainActivity extends Activity implements OnClickListener {
 
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
-		//if (requestCode == Globals.MOREVIDEO) {
-			switch (resultCode) {
-			case Globals.VIDEO1:
-				Intent i = new Intent(this, Video2.class);
-				//i.putExtra(Globals.VIDEO, Globals.VIDEO1);
-				startActivityForResult(i, Globals.MOREVIDEO);
-				break;
-			case Globals.VIDEO2:
-				Intent i2 = new Intent(this, Video3.class);
-				startActivityForResult(i2, Globals.MOREVIDEO);
-				break;
-			case Globals.VIDEO3:
-				Intent i3 = new Intent(this, Video4.class);
-				startActivityForResult(i3, Globals.MOREVIDEO);
-				break;
-			case Globals.VIDEO4:
-				Intent i4 = new Intent(this, Video5.class);
-				startActivityForResult(i4, Globals.MOREVIDEO);
-				break;
-			case Globals.VIDEO5:
-				Intent i5 = new Intent(this, Video6.class);
-				startActivityForResult(i5, Globals.MOREVIDEO);
-				break;
-			case Globals.VIDEO6:
-				Intent i6 = new Intent(this, Video1.class);
-				startActivityForResult(i6, Globals.MOREVIDEO);
-				break;
-			}
-		//}
+		// if (requestCode == Globals.MOREVIDEO) {
+		switch (resultCode) {
+		case Globals.VIDEO1:
+			Intent i = new Intent(this, Video2.class);
+			// i.putExtra(Globals.VIDEO, Globals.VIDEO1);
+			startActivityForResult(i, Globals.MOREVIDEO);
+			break;
+		case Globals.VIDEO2:
+			Intent i2 = new Intent(this, Video3.class);
+			startActivityForResult(i2, Globals.MOREVIDEO);
+			break;
+		case Globals.VIDEO3:
+			Intent i3 = new Intent(this, Video4.class);
+			startActivityForResult(i3, Globals.MOREVIDEO);
+			break;
+		case Globals.VIDEO4:
+			Intent i4 = new Intent(this, Video5.class);
+			startActivityForResult(i4, Globals.MOREVIDEO);
+			break;
+		case Globals.VIDEO5:
+			Intent i5 = new Intent(this, Video6.class);
+			startActivityForResult(i5, Globals.MOREVIDEO);
+			break;
+		case Globals.VIDEO6:
+			Intent i6 = new Intent(this, Video1.class);
+			startActivityForResult(i6, Globals.MOREVIDEO);
+			break;
+		}
+		// }
 	}
 }
